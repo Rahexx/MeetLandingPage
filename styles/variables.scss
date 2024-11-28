@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 // Colors
 $cyan-600: hsl(192, 37%, 48%);
 $cyan-300: hsl(192, 90%, 77%);
@@ -9,5 +11,29 @@ $slate-300: hsl(240, 18%, 85%);
 $white: hsl(0, 0%, 98%);
 
 // Typography
+$font-primary: 'Red Hat Display', sans-serif;
+$font-size-s: 16px;
+$font-size-m: 18px;
+$font-size-l: 40px;
+$font-size-xl: 64px;
+
+$line-height-s: 110%;
+$line-heigh-l: 150%;
+
+$letter-spacing-4: 4px;
+
+$font-weight-900: 900;
+$font-weight-500: 500;
 
 // Spacing
+$space-4: 4px;
+$space-8: 8px;
+$space-16: 16px;
+$space-24: 24px;
+$space-32: 32px;
+$space-40: 40px;
+$space-56: 56px;
+$space-64: 64px;
+$space-72: 72px;
+$space-80: 80px;
+$space-112: 112px;
