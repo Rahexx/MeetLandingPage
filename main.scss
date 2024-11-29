@@ -1,1 +1,98 @@
 @import 'styles/variables.scss';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container,
+button {
+  font-family: $font-primary;
+}
+
+img {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: $space-64;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &__logo {
+    display: inline-block;
+    height: 27px;
+    width: 118px;
+    margin-top: $space-40;
+    object-fit: cover;
+  }
+
+  &__hero {
+    display: inline-block;
+    height: 160px;
+    width: 433px;
+    margin: $space-64 0 $space-40;
+
+    &--right {
+      display: none;
+    }
+  }
+
+  &__title {
+    color: $slate-900;
+    font-weight: $font-weight-900;
+    font-size: $font-size-l;
+    text-align: center;
+    line-height: $line-height-s;
+  }
+
+  &__text {
+    margin: $space-24 $space-32;
+    color: $slate-600;
+    font-size: $font-size-s;
+    font-weight: $font-weight-500;
+    line-height: $line-height-l;
+    text-align: center;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $space-16;
+  }
+}
+
+.btn {
+  height: 56px;
+  padding: $space-16 $space-40;
+  color: $white;
+  border: none;
+  border-radius: 29px;
+  font-size: $font-size-s;
+  font-weight: $font-weight-500;
+  line-height: $line-height-l;
+
+  &--cyan {
+    background: $cyan-600;
+
+    &:hover {
+      background: $cyan-300;
+    }
+  }
+
+  &--purple {
+    background: $purple-600;
+
+    &:hover {
+      background: $purple-300;
+    }
+  }
+}
