@@ -1,0 +1,29 @@
+.meetings {
+  &__intro {
+    margin-bottom: $space-16;
+    color: $cyan-600;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-900;
+    line-height: $line-height-s;
+    letter-spacing: $letter-spacing-4;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: $space-32;
+    color: $slate-900;
+    font-size: calc($font-size-s * 2);
+    font-weight: $font-weight-900;
+    line-height: $line-height-s;
+    text-align: center;
+  }
+
+  &__text {
+    color: $slate-600;
+    font-size: $font-size-s;
+    font-weight: $font-weight-500;
+    line-height: $line-height-l;
+    text-align: center;
+  }
+}

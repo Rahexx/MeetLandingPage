@@ -1,12 +1,9 @@
 @import 'styles/variables.scss';
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import 'styles/reset.scss';
+@import 'styles/components/button';
+@import 'styles/components/separator';
+@import 'styles/components/gallery';
+@import 'styles/components/meetings';
 
 .container,
 button {
@@ -70,53 +67,17 @@ img {
   }
 }
 
-.btn {
-  height: 56px;
-  padding: $space-16 $space-40;
-  color: $white;
-  border: none;
-  border-radius: 29px;
-  font-size: $font-size-s;
-  font-weight: $font-weight-500;
-  line-height: $line-height-l;
-
-  &--cyan {
-    background: $cyan-600;
-
-    &:hover {
-      background: $cyan-300;
-    }
-  }
-
-  &--purple {
-    background: $purple-600;
-
-    &:hover {
-      background: $purple-300;
-    }
-  }
-}
-
-.separator {
-  position: relative;
+.content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 56px;
-  width: 56px;
-  color: $slate-600;
-  line-height: $line-height-l;
-  border-radius: 50%;
-  border: 1px solid $slate-300;
+  padding: 0 9.33%;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: -80px;
-    left: calc(50% - 0.5px);
-    display: block;
-    height: 80px;
-    width: 1px;
-    background: $slate-300;
+  &__gallery {
+    margin: $space-64 0;
+  }
+
+  .meetings {
+    margin-bottom: calc($space-64 + 80px);
   }
 }

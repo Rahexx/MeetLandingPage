@@ -1,0 +1,26 @@
+.btn {
+  height: 56px;
+  padding: $space-16 $space-40;
+  color: $white;
+  border: none;
+  border-radius: 29px;
+  font-size: $font-size-s;
+  font-weight: $font-weight-500;
+  line-height: $line-height-l;
+
+  &--cyan {
+    background: $cyan-600;
+
+    &:hover {
+      background: $cyan-300;
+    }
+  }
+
+  &--purple {
+    background: $purple-600;
+
+    &:hover {
+      background: $purple-300;
+    }
+  }
+}

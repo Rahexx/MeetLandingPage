@@ -1,0 +1,23 @@
+.separator {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 56px;
+  color: $slate-600;
+  line-height: $line-height-l;
+  border-radius: 50%;
+  border: 1px solid $slate-300;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: calc(50% - 0.5px);
+    display: block;
+    height: 80px;
+    width: 1px;
+    background: $slate-300;
+  }
+}
