@@ -29,3 +29,20 @@
     text-align: center;
   }
 }
+
+@media (min-width: $tablet) {
+  .meetings {
+    &__intro {
+      font-size: ($font-size-xs * 1.17);
+    }
+
+    &__title {
+      max-width: $max-size-tablet-smaller;
+      font-size: calc($font-size-s * 2.25);
+    }
+
+    &__text {
+      max-width: $max-size-tablet-larger;
+    }
+  }
+}

@@ -28,6 +28,7 @@ $font-weight-500: 500;
 
 // Spacing
 $space-mobile: 9.33%;
+$space-tablet: 5.73%;
 $space-4: 4px;
 $space-8: 8px;
 $space-16: 16px;
@@ -42,3 +43,8 @@ $space-112: 112px;
 
 // Size
 $max-size-mobile: 311px;
+$max-size-tablet-smaller: 448.3px;
+$max-size-tablet-larger: 504px;
+
+// Breakpoints
+$tablet: 762px;

@@ -6,15 +6,6 @@
 @import 'styles/components/gallery';
 @import 'styles/components/meetings';
 
-.container,
-button {
-  font-family: $font-primary;
-}
-
-img {
-  display: none;
-}
-
 .header {
   width: 100%;
   margin-bottom: ($space-64 + 80px);
@@ -92,7 +83,7 @@ img {
   flex-direction: column;
   align-items: center;
   background-image: url('../assets/tablet/image-footer.jpg');
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -139,5 +130,54 @@ img {
   &__btn {
     @include changePositionZ(3);
     margin: $space-24 0 $space-64;
+  }
+}
+
+@media (min-width: $tablet) {
+  .header {
+    margin-bottom: ($space-64 + 80px + $space-56);
+
+    &__hero {
+      height: 303px;
+      width: 820px;
+    }
+
+    &__title {
+      max-width: $max-size-tablet-smaller;
+      font-size: calc($font-size-s * 3);
+    }
+
+    &__text {
+      max-width: $max-size-tablet-smaller;
+    }
+
+    &__actions {
+      flex-direction: row;
+    }
+  }
+
+  .content {
+    padding: 0 $space-tablet;
+
+    &__gallery {
+      margin: $space-64 0;
+    }
+
+    .meetings {
+      margin-bottom: calc($space-64 + 80px + 28px);
+    }
+  }
+
+  .footer {
+    position: relative;
+
+    &__title {
+      max-width: $max-size-tablet-larger;
+      font-size: calc(2.25 * $font-size-s);
+    }
+
+    &__text {
+      max-width: $max-size-tablet-larger;
+    }
   }
 }

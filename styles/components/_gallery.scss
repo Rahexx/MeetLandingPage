@@ -11,3 +11,14 @@
     border-radius: 8px;
   }
 }
+
+@media (min-width: $tablet) {
+  .gallery {
+    gap: $space-24;
+
+    &__img {
+      flex: 1 1 calc(25% - ($space-24 * 0.75));
+      max-width: calc(25% - ($space-24 * 0.75));
+    }
+  }
+}
