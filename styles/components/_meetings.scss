@@ -46,3 +46,20 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .meetings {
+    &__intro {
+      font-size: $font-size-s;
+    }
+
+    &__title {
+      font-size: $font-size-l;
+    }
+
+    &__text {
+      max-width: $max-size-desktop;
+      font-size: $font-size-m;
+    }
+  }
+}

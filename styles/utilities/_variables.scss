@@ -3,8 +3,10 @@
 // Colors
 $cyan-600: hsl(192, 37%, 48%);
 $cyan-300: hsl(192, 90%, 77%);
+$cyan-accent: hsl(192, 54%, 54%);
 $purple-600: hsl(268, 34%, 53%);
 $purple-300: hsl(268, 100%, 86%);
+$purple-accent: hsl(268, 55%, 71%);
 $slate-900: hsl(240, 21%, 20%);
 $slate-600: hsl(240, 10%, 57%);
 $slate-300: hsl(240, 18%, 85%);
@@ -29,6 +31,8 @@ $font-weight-500: 500;
 // Spacing
 $space-mobile: 9.33%;
 $space-tablet: 5.73%;
+$space-dekstop-smaller: 8%;
+$space-desktop: 11.11%;
 $space-4: 4px;
 $space-8: 8px;
 $space-16: 16px;
@@ -43,8 +47,11 @@ $space-112: 112px;
 
 // Size
 $max-size-mobile: 311px;
+$max-size-mobile-larger: 355px;
 $max-size-tablet-smaller: 448.3px;
 $max-size-tablet-larger: 504px;
+$max-size-desktop: 544px;
 
 // Breakpoints
 $tablet: 762px;
+$desktop: 1400px;

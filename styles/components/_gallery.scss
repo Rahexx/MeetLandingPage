@@ -22,3 +22,14 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .gallery {
+    gap: $space-32;
+
+    &__img {
+      flex: 1 1 calc(25% - ($space-32 * 0.75));
+      max-width: calc(25% - ($space-32 * 0.75));
+    }
+  }
+}
