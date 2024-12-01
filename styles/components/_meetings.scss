@@ -11,7 +11,8 @@
   }
 
   &__title {
-    margin-bottom: $space-32;
+    max-width: $max-size-mobile;
+    margin: 0 auto $space-32;
     color: $slate-900;
     font-size: calc($font-size-s * 2);
     font-weight: $font-weight-900;
@@ -20,6 +21,7 @@
   }
 
   &__text {
+    max-width: $max-size-mobile;
     color: $slate-600;
     font-size: $font-size-s;
     font-weight: $font-weight-500;

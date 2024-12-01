@@ -1,5 +1,6 @@
 @import 'styles/variables.scss';
 @import 'styles/reset.scss';
+@import 'styles/utilities/mixins';
 @import 'styles/components/button';
 @import 'styles/components/separator';
 @import 'styles/components/gallery';
@@ -43,6 +44,8 @@ img {
   }
 
   &__title {
+    max-width: $max-size-mobile;
+    margin: 0 auto;
     color: $slate-900;
     font-weight: $font-weight-900;
     font-size: $font-size-l;
@@ -51,7 +54,8 @@ img {
   }
 
   &__text {
-    margin: $space-24 $space-32;
+    max-width: $max-size-mobile;
+    margin: $space-24 auto;
     color: $slate-600;
     font-size: $font-size-s;
     font-weight: $font-weight-500;
@@ -71,13 +75,69 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 9.33%;
+  padding: 0 $space-mobile;
 
   &__gallery {
     margin: $space-64 0;
   }
 
   .meetings {
-    margin-bottom: calc($space-64 + 80px);
+    margin-bottom: calc($space-64 + 80px + 28px);
+  }
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../assets/tablet/image-footer.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $cyan-600;
+    opacity: 0.8;
+  }
+
+  &__separator {
+    @include changePositionZ(3);
+    top: 0;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    @include changePositionZ(3);
+    max-width: $max-size-mobile;
+    margin-top: $space-40;
+    color: $white;
+    font-size: calc(2 * $font-size-s);
+    font-weight: $font-weight-900;
+    line-height: $line-height-s;
+    text-align: center;
+  }
+
+  &__text {
+    @include changePositionZ(3);
+    max-width: $max-size-mobile;
+    margin-top: $space-24;
+    color: $white;
+    line-height: $line-height-l;
+    font-weight: $font-weight-500;
+    text-align: center;
+  }
+
+  &__btn {
+    @include changePositionZ(3);
+    margin: $space-24 0 $space-64;
   }
 }
