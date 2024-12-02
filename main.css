@@ -28,10 +28,10 @@ button {
   background: hsl(192, 37%, 48%);
 }
 .btn--cyan:hover {
-  background: hsl(192, 90%, 77%);
+  background: hsl(192, 54%, 54%);
 }
 .btn--cyan .btn--version {
-  color: hsl(192, 54%, 54%);
+  color: hsl(192, 90%, 77%);
 }
 .btn--purple {
   background: hsl(268, 34%, 53%);
@@ -238,7 +238,7 @@ button {
   left: 0;
   right: 0;
   background: hsl(192, 37%, 48%);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .footer__separator {
   position: relative;
