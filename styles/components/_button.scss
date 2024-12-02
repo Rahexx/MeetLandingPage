@@ -14,12 +14,12 @@
     background: $cyan-600;
 
     &:hover {
-      background: $cyan-300;
+      background: $cyan-accent;
     }
   }
 
   &--cyan &--version {
-    color: $cyan-accent;
+    color: $cyan-300;
   }
 
   &--purple {
