@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+// Colors
+$cyan-600: hsl(192, 37%, 48%);
+$cyan-300: hsl(192, 90%, 77%);
+$cyan-accent: hsl(192, 54%, 54%);
+$purple-600: hsl(268, 34%, 53%);
+$purple-300: hsl(268, 100%, 86%);
+$purple-accent: hsl(268, 55%, 71%);
+$slate-900: hsl(240, 21%, 20%);
+$slate-600: hsl(240, 10%, 57%);
+$slate-300: hsl(240, 18%, 85%);
+$white: hsl(0, 0%, 98%);
+
+// Typography
+$font-primary: 'Red Hat Display', sans-serif;
+$font-size-xs: 12px;
+$font-size-s: 16px;
+$font-size-m: 18px;
+$font-size-l: 40px;
+$font-size-xl: 64px;
+
+$line-height-s: 110%;
+$line-height-l: 150%;
+
+$letter-spacing-4: 4px;
+
+$font-weight-900: 900;
+$font-weight-500: 500;
+
+// Spacing
+$space-mobile: 9.33%;
+$space-tablet: 5.73%;
+$space-dekstop-smaller: 8%;
+$space-desktop: 11.11%;
+$space-4: 4px;
+$space-8: 8px;
+$space-16: 16px;
+$space-24: 24px;
+$space-32: 32px;
+$space-40: 40px;
+$space-56: 56px;
+$space-64: 64px;
+$space-72: 72px;
+$space-80: 80px;
+$space-112: 112px;
+
+// Size
+$max-size-mobile: 311px;
+$max-size-mobile-larger: 355px;
+$max-size-tablet-smaller: 448.3px;
+$max-size-tablet-larger: 504px;
+$max-size-desktop: 544px;
+
+// Breakpoints
+$tablet: 762px;
+$desktop: 1400px;
+$larger-desktop: 1440px;

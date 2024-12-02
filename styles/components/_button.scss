@@ -1,0 +1,36 @@
+.btn {
+  height: 56px;
+  padding: $space-16 $space-40;
+  color: $white;
+  border: none;
+  border-radius: 29px;
+  font-size: $font-size-s;
+  font-weight: $font-weight-500;
+  line-height: $line-height-l;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+
+  &--cyan {
+    background: $cyan-600;
+
+    &:hover {
+      background: $cyan-300;
+    }
+  }
+
+  &--cyan &--version {
+    color: $cyan-accent;
+  }
+
+  &--purple {
+    background: $purple-600;
+
+    &:hover {
+      background: $purple-accent;
+    }
+  }
+
+  &--purple &--version {
+    color: $purple-300;
+  }
+}

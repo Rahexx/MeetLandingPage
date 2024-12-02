@@ -1,0 +1,4 @@
+@mixin changePositionZ($z-property) {
+  position: relative;
+  z-index: $z-property;
+}

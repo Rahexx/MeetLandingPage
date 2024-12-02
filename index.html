@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Meet landing page</title>
+    <link href="./css/main.css" rel="stylesheet"/>
+  </head>
+  <body class="container">
+    <header class="header">
+      <img
+        src="./assets/logo.svg"
+        alt="logo of the website"
+        class="header__logo"
+      />
+      <div class="header__banner">
+        <picture>
+          <source
+            srcset="./assets/desktop/image-hero-left.png"
+            media="(min-width: 1400px)"
+          />
+          <source
+            srcset="./assets/tablet/image-hero.png"
+            media="(max-width: 1400px)"
+          />
+          <img
+            class="header__hero header__hero--left"
+            src="./assets/tablet/image-hero.png"
+            alt="Group of people represented with avatar images in circular shapes"
+          />
+        </picture>
+        <img
+          class="header__hero header__hero--right"
+          src="./assets/desktop/image-hero-right.png"
+          alt="Group of people represented with avatar images in circular shapes"
+        />
+      </div>
+      <h1 class="header__title">Group Chat for Everyone</h1>
+      <p class="header__text">
+        Meet makes it easy to connect with others face-to-face virtually and
+        collaborate across any device.
+      </p>
+      <div class="header__actions">
+        <button
+          class="btn header__btn btn--cyan
+          aria-label="Download the Meet app version 1.3"
+        >
+          Download <span class="btn--version">v1.3</span>
+        </button>
+        <button
+          class="btn header__btn btn--purple"
+          aria-label="Learn more about the Meet app"
+        >
+          What is it?
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="separator content__separator">01</div>
+      <div class="content__gallery gallery">
+        <img
+          src="./assets/desktop/image-woman-in-videocall.jpg"
+          alt="woman is speaking with someone in videocall"
+          class="gallery__img"
+        />
+        <img
+          src="./assets/desktop/image-women-videochatting.jpg"
+          alt="women are speaking with someone in video chat"
+          class="gallery__img"
+        />
+        <img
+          src="./assets/desktop/image-men-in-meeting.jpg"
+          alt="man is in the middle of the meeting"
+          class="gallery__img"
+        />
+        <img
+          src="./assets/desktop/image-man-texting.jpg"
+          alt="man is sitting on the couch and texting with someone on the phone"
+          class="gallery__img"
+        />
+      </div>
+      <section class="meetings">
+        <p class="meetings__intro">Built for modern use</p>
+        <h2 class="meetings__title">Smarter meetings, all in one place</h2>
+        <p class="meetings__text">
+          Send messages, share files, show your screen, and record your meetings
+          — all in one workspace. Control who can join with invite-only team
+          access, data encryption, and data export.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="separator footer__separator">02</div>
+      <h2 class="footer__title">Experience more together</h2>
+      <p class="footer__text">
+        Stay connected with reliable HD meetings and unlimited one-on-one and
+        group video sessions.
+      </p>
+      <button
+        class="btn btn--purple footer__btn"
+        aria-label="Download the Meet app version 1.3"
+      >
+        Download <span class="btn--version">v1.3</span>
+      </button>
+    </footer>
+  </body>
+</html>
