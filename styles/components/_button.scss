@@ -20,6 +20,7 @@
 
   &--cyan &--version {
     color: $cyan-300;
+    font-weight: $font-weight-900;
   }
 
   &--purple {
@@ -32,5 +33,6 @@
 
   &--purple &--version {
     color: $purple-300;
+    font-weight: $font-weight-900;
   }
 }
