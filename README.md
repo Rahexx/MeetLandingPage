@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GIthub](https://github.com/Rahexx/MeetLandingPage)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/Rahexx/MeetLandingPage)
+- Live Site URL: [Live Site](https://rahexx.github.io/MeetLandingPage)
 
 ## My process
 
